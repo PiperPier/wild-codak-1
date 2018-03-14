@@ -1,7 +1,9 @@
 let connection = require('/Users/samy/Desktop/WCS_PROJECT/ejs_project/config/databse.js')
 
 class Request{
-
+/*
+ Récupérer toutes les photos du blog.
+*/
     static findAll(callback) {
 
          connection.query('SELECT name FROM monumentPictures',(err,lines)=>{
@@ -15,11 +17,31 @@ class Request{
             callback(lines)
             connection.end() 
             }
-        
+
          }) 
     }
      
-    
+    static findHistorical(callback){
+
+        connection.query('SELECT name FROM monumentPictures WHERE categoryId = 2',(err,result)=>{
+
+            if(err){
+                throw err
+                console.log(err)
+            }
+
+            else{
+                callback(result)
+                connection.end()
+            }
+
+        })
+    }
+/******************
+ PAGE CONTACT : 
+ - Enregistrer les données du formulaires
+******************/   
+
     static setMessage(firstname, lastname, mail, phone, message){
 
         let datecreate = Date.now();

@@ -6,6 +6,6 @@ let transport = nodemailer.createTransport({
         user: "walterwhitegithub@gmail.com",
         pass: "**********"
     }
-});
+}); 
 
 module.exports = transport

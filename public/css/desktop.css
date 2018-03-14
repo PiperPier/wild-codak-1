@@ -18,7 +18,6 @@
 
 .opening-page div img{
 	width:100%;
-	
 }
 
 .open1{
@@ -70,7 +69,6 @@
  ***********************************************************/
 /* Barre contenant icones social network */
 header .contain-social{
-
 	display: flex;
 	background-color: black;
 	border-bottom: white 2px solid;
@@ -220,7 +218,10 @@ Menu de navigation :
 	height: 100vh;
 	max-height: 100vh;
 	border-bottom :solid 3px white;
+
 }
+
+
 
 .desktop h2{
 	font-size: 5em;
@@ -231,23 +232,43 @@ Menu de navigation :
 	background-color: rgba(0,0,0,0.4);
 }
 
-.desktop p{
-	margin: 150px 0px 0px 20px;
-	padding: 20px;
-	color:white;
-	background-color:rgba(0, 0, 0,0.6);
-	width: 40%;
-	border-radius : 10px;
-}
+
 
 .culturel{
-	background-image: url("../img/PHOTOS_MONUMENTS/EIFFEL_05.jpg");
+	background-image: url("../img/PHOTOS_MONUMENTS/EIFFEL_01.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+
 }
 
+.contain-p {
+
+	margin:0 auto;
+	margin-top : 5%;
+	padding: 20px;
+	color:white;
+	background-color:rgba(0, 0, 0,0.7);
+	width: 40%;
+	border-radius : 10px;
+	line-height: 30px;
+	font-size:18px;
+	text-align:center;
+}
+
+.contain-p p{
+	margin-bottom: 10px;
+	text-align: justify; 
+}
+
+.show-pict{
+	width: 100%;
+	background-color: #fff;
+	color: black;
+	padding: 10px;
+	border-radius: 8px;
+}
 
 .museum{
 	background-image: url("../img/PHOTOS_MONUMENTS/ARCDETRIOMPHE_04.jpg");

@@ -23,7 +23,8 @@ app.use(session({
 /*************************************************************************************
                                       ROUTING
 **************************************************************************************/
-
+// Appel classe request 
+let req = require('./model/request')
 /*****************************************
             PAGE ACCUEIL
 ******************************************/
@@ -37,16 +38,34 @@ app.get('/accueil',(request,response)=>{
 ******************************************/
 app.get('/galerie-photos',(request,response)=>{
 
-// Appel classe request 
-        let req = require('./model/request')
+
 
 // Utilisation  de la méthode findAll.
         req.findAll((results)=>{
 // Retourner la réponse vers notre page galerie-photos
         response.render('pages/photo.ejs',{result:results})
   })
-  
+
 })  
+
+/*****************************************
+PAGE ACCUEIL => click sur les liens photos :
+- Monuments historiques.
+- Monuments culturels
+******************************************/
+
+app.get('/monuments-historiques-de-paris',(request,response)=>{
+
+// Utilisation de la méthode recherche par monument historique
+      req.findHistorical((results)=>{
+            console.log(results)
+// Retourner le résultat de la requête dans la view.
+      response.render('pages/galeriePictures/pictures.ejs',{result:results})
+      })
+      
+
+})
+
 /************************************
             PAGE DE CONTACT
 ************************************/
@@ -57,8 +76,8 @@ app.get('/contact',(request, response)=> {
 
 // Récupérer les données du formulaires lorsque celui est posté.
 app.post('/contact',(request, response) =>{
+      
       let form = request.body
-
 // Enregistrer en base de données le message.
       let req = require('./model/request')
       req.setMessage(form.firstname, form.lastname, form.mail, form.phone, form.message)
