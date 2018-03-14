@@ -1,0 +1,22 @@
+{
+  "name": "blog_photo",
+  "version": "1.0.0",
+  "description": "Blog d'un photographe",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "sammy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.6.2",
+    "nodemon": "^1.17.1"
+  }
+}
