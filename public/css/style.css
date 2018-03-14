@@ -1,0 +1,154 @@
+@font-face{
+
+	font-family: 'mono andale';
+	src:url('../css/fonts/Andale Mono.ttf');
+}
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: content-box;
+	font-family: 'mono andale';
+	}
+
+h2{text-align: center}
+
+h3{
+	text-align: left;
+	margin: 10px 0px 5px 0px;
+	font-weight: bold;
+	}
+
+li{
+list-style: none;
+	}
+
+a{
+	text-decoration: none;
+}
+
+.container-article{
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+.container-picture{
+	border:solid 2px black;
+	margin: 10px;
+
+}
+
+/***********************************************************************************
+************************************************************************************
+								FORMULAIRE DE CONTACT 
+URL: contact.html								
+***********************************************************************************
+***********************************************************************************/
+/*
+- Image de fond
+*/
+
+.contain-form{
+	height: 100vh;
+	background-image: url('../img/contactimmg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fas{
+	margin:0px 10px 0px 5px;;
+}
+label{
+	color:white;
+}
+
+input[type="text"],input[type="phone"], textarea{
+	border-radius: 8px;
+	width: 40vh;
+	opacity: 0.5;
+}
+
+input:focus, textarea:focus { 
+	background-color: white;
+	opacity: 1;
+}
+
+.contain-form{
+	
+	display: flex;
+	justify-content: center;
+}
+
+.contain-form>div{
+
+	margin-top: 20px;
+}
+
+.contain-form h2{
+	color: white;
+	text-align: center;
+	font-size: 36px;
+}
+
+form{
+	
+	padding: 20px;
+	}
+
+
+form input{
+
+	font-size: 20px;
+	margin : 20px 0px 0px 0px;
+
+}
+input::placeholder {
+	border:solid 2px white;
+  }
+form div{
+	text-align: center;
+}
+
+form p{
+
+	color :white;
+	margin: 8px 0px 8px 0px;
+}
+
+
+input[type="button"]{
+	color:white;
+	text-align: center;
+	background-color: #4AA1EB;
+	padding: 8px;
+	border-radius:8px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/***********************************************************************************
+************************************************************************************
+									QUIZ.HTML
+URL: quiz.html
+***********************************************************************************
+***********************************************************************************/
+.form-img{
+	margin-top: 20px;
+	text-align: center;
+}
+.form-img img{
+	width: 80%;
+	border-radius: 50%;
+}
+
+
+
+/*****
+FOOTER
+******/
+
+footer{
+	border-top:solid 2px white;
+	background-color:black;
+}
+

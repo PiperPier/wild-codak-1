@@ -1,0 +1,281 @@
+@media only screen and (max-width: 768px) {
+	
+/********************************************************************** 
+Masquer les vues desktop :
+- Le bandeau réseaux sociaux.
+- La liste des thémes
+*/	
+
+	.contain-art, .desktop, .contain-social, .slider,.opening-page,.opening-btn,.contain-video{
+
+	display: none;
+}
+
+/***********************************************************************
+************************************************************************
+					 			HEADER
+************************************************************************
+***********************************************************************/
+	header>div{
+		background-color: black;
+		color: white;
+	}
+
+	.contain-title{
+		display: flex;
+		align-items: center;	
+	}
+
+	.nav-header{
+		transition: all 0.5s ease-in-out;
+		height: 100%;
+		position: fixed;
+		margin-top: 57.98px;
+		top:0%;;
+		bottom: 0;
+		left: -300px;
+		background-color:rgba(0, 0, 0,0.8);
+		z-index: 999;
+	}
+	.container-img{
+		text-align: center;
+	}	
+	header img{
+	max-width: 150px;
+	width: 100%;
+}
+
+
+	.nav-header li{
+
+		border-bottom: solid 1px black;
+		padding: 5px 0px 5px 0px;
+		font-weight:bold;
+		letter-spacing: 5px;
+		margin:10px 0px 10px 0px;
+		width: 100%;
+	}
+
+	.nav-header>ul li a{
+		text-decoration: none;
+		color:white;
+		font-size: 1.5em;
+		letter-spacing: 10px;
+		width: 100%;
+
+	}
+
+	.nav-header>ul li:hover{
+		background-color: white;
+	}	
+
+	.nav-header>ul li a:hover{
+	
+		color:black;
+	
+	}
+
+
+/*********************************************************************************************************************
+ *********************************************************************************************************************
+	                         			 ACCUEIL ACCUEIL ACCUEIL => index.html
+**********************************************************************************************************************
+*********************************************************************************************************************/
+
+main>section .container-img{
+	 min-height: 100vh;
+}
+
+.img{
+
+	position: relative;
+	margin: 0;
+}
+
+.img img{
+
+	width: 100%;
+	min-height: 40vh;
+
+}
+
+.img p{
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	padding: 20px 0px 20px 0px;
+	top:40%;
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border-top :solid 1px white;
+	border-bottom: solid 1px white;
+	letter-spacing: 10px;
+
+}
+
+.img a{
+
+	text-decoration: none;
+	color: white;
+}
+
+/*********************************************************************************************************************
+ *********************************************************************************************************************
+	                          GALERIE PHOTOS GALERIE PHOTOS GALERIE PHOTOS 
+**********************************************************************************************************************
+*********************************************************************************************************************/
+
+/* Conteneur des images */
+
+.container-picture{
+
+	width: 30%;
+	margin:5px;
+	height: 20%;
+}
+
+.container {
+
+	display: none;
+}
+
+.container-article{
+
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.container-picture img{
+	width: 100%;
+}
+
+
+/*********************************************************************************************************************
+ *********************************************************************************************************************
+	                          				GALERIE PHOTOS GALERIE PHOTOS GALERIE PHOTOS 
+**********************************************************************************************************************
+*********************************************************************************************************************/
+
+
+/**********************************
+Page : galerie-photos.html
+**********************************/
+.contain{
+	display: block;
+	width:100%;
+}
+
+.cont-galerie{
+	width: 33%;
+	margin:1px;
+	position: relative;
+	animation-name: pulse;
+}
+
+
+
+.cont-icon{
+	position: absolute;
+	width: 100%;
+	display:flex;
+	justify-content: space-evenly;
+	bottom: 2%;
+	color:white;
+	padding: 10px 0px 10px 0px;
+	background-color:rgba(0, 0, 0,0.8);
+	display: none;
+}
+
+.cont-galerie:hover .cont-icon{
+	display: flex;
+}
+
+
+@keyframes pulse {
+	from {
+	  -webkit-transform: scale3d(1, 1, 1);
+	  transform: scale3d(1, 1, 1);
+	}
+  
+	50% {
+	  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+	  transform: scale3d(1.05, 1.05, 1.05);
+	}
+  
+	to {
+	  -webkit-transform: scale3d(1, 1, 1);
+	  transform: scale3d(1, 1, 1);
+	}
+  }
+
+
+
+footer{
+
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+.nav-footer>ul li{
+
+	padding: 8px;
+	border-bottom: solid 1px #6821A5;
+}
+
+.nav-footer a {
+	letter-spacing: 5px;
+	text-decoration: none;
+	color:white;
+}
+
+.developer{
+
+	margin-top: 10px;
+}
+
+/*********************
+galerie(religious.html,museum.html)
+*********************/
+.contain-galerie{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.galerie-img{
+	width: 50%;
+
+}
+
+.galerie-img img{
+
+	border:solid 1px white;
+}
+.contain-galerie img{
+	width: 100%;
+
+}
+
+
+/**************************************************************
+ Animation class JAVASCRIPT
+ *************************************************************/
+.contain-form{
+	height: 100vh;	
+}
+.slideDown{
+	width: 300px;
+	left: 0px;
+}
+
+
+.noscroll{
+	overflow: hidden;
+	
+}
+
+}

@@ -1,0 +1,348 @@
+
+
+@media only screen and (min-width: 1220px){
+
+/************************************************************
+ ************************************************************
+						Animation page accueil
+ ***********************************************************
+ ***********************************************************/
+
+ /* dimensions et positionnement de la page */
+ .opening-page{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	display: flex;
+}
+
+.opening-page div img{
+	width:100%;
+	
+}
+
+.open1{
+	left:0px;
+}
+
+.open2{
+	right:0px;
+}
+
+.opening-l{
+	position: relative;
+	left:-50vw;
+	transition: all 1.1s cubic-bezier(0, 1.12, 1, 1);
+}
+
+.opening-r{
+	position: relative;
+	right:-50vw;
+	transition: all 1.1s cubic-bezier(0, 1.12, 1, 1);
+}
+
+/* style, dimensions et position du bouton "open" */
+.opening-btn{
+	position: fixed;
+	top:50%;
+	width: 100%;
+	z-index: 999;
+	color:white;
+	text-align: center;
+	padding: 10px;
+}
+
+.open-btn{
+	font-size: 30px;
+	letter-spacing: 20rpx;
+	border:solid 2px white;
+	padding: 10px;
+	border-radius:10px;
+	text-shadow:2px 2px rgb(250, 240, 240);
+	background-color:rgba(0, 0, 0,0.6);
+	cursor: pointer;
+}
+
+/************************************************************
+ ************************************************************
+						HEADER
+ ***********************************************************
+ ***********************************************************/
+/* Barre contenant icones social network */
+header .contain-social{
+
+	display: flex;
+	background-color: black;
+	border-bottom: white 2px solid;
+	justify-content: flex-end;
+	color :white;
+	align-items: center;
+}
+
+.contain-social div{
+	
+	margin-right: 10px;
+}
+
+/* Texte logo social */
+.contain-social{
+
+	font-family: 'lobtser', cursive;
+	font-size: 20px;
+}
+
+/* Animation video */
+video{
+	width: 100%;
+	position: relative;
+}
+
+
+.skip-video{
+	position: absolute;
+	bottom:0%;
+	left:45%;
+	padding: 10px;
+	border:red solid 2px;
+	color: white;
+	background-color: black;
+	width: 10%;
+	text-align:center;
+	display: none;
+	animation: pulse 3s ;
+}
+
+
+@keyframes pulse {
+  0% {
+	opacity: 0;;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+
+.contain-social .fab{
+
+	margin : 5px;
+}
+
+header .header-content{
+	display: flex;
+	padding: 20px;
+	align-items: center;
+	background-color: black;
+	border-bottom: solid 2px white;
+}
+
+.header-content img{
+	max-width: 300px;
+	width: 100%;
+}
+
+header .fas{
+	color: white;
+}
+
+
+/*
+Menu de navigation :
+-  Accueil / Portofolio / A propos /Contact/Quiz
+*/
+.nav-header{
+	width: 100%;
+	font-size: 18px;
+}
+
+.nav-header>ul{
+	display: flex;
+	justify-content: flex-end;
+}	
+
+.nav-header>ul li a{
+	margin: 0px 20px 3px 20px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	color:white;
+	transition: all 0.2s ease;
+}
+
+.nav-header>ul li a{
+	text-decoration: none;
+	color:white;
+}
+
+.nav-header>ul li a:hover {
+	margin-bottom: 0px;
+	border-bottom: solid 3px white;
+	transition: all 0.2s ease;
+}
+	
+.contain-title>i{
+	display: none;
+}
+
+
+.contain-art{
+	display: flex;
+	overflow-x: scroll;
+	background-color: black;
+}
+
+.contain-art div{
+
+	padding:20px;
+	border: solid 2px white;
+	margin :20px;
+}
+
+.contain-art div img{	
+	width: 500px;
+	height:300px;
+}
+
+
+
+/************************************************************
+ ************************************************************
+						PHOTO de Menu
+ ***********************************************************
+ ***********************************************************/						
+
+.contain-img{
+
+	display: none;
+}
+
+.desktop{
+	height: 100vh;
+	max-height: 100vh;
+	border-bottom :solid 3px white;
+}
+
+.desktop h2{
+	font-size: 5em;
+	letter-spacing: 10px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.desktop p{
+	margin: 150px 0px 0px 20px;
+	padding: 20px;
+	color:white;
+	background-color:rgba(0, 0, 0,0.6);
+	width: 40%;
+	border-radius : 10px;
+}
+
+.culturel{
+	background-image: url("../img/PHOTOS_MONUMENTS/EIFFEL_05.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.museum{
+	background-image: url("../img/PHOTOS_MONUMENTS/ARCDETRIOMPHE_04.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.muse{
+	position: relative;
+	bottom:0;
+}
+
+
+
+.religious{
+	text-align: center;
+	background-color : black;
+	
+}
+
+.plx{
+
+	position: absolute;
+}
+
+
+
+/**********************************
+Page : galerie-photos.html
+**********************************/
+.contain{
+	display: flex;
+	flex-wrap: wrap;
+	width:100%;
+}
+
+.cont-galerie{
+	width: 33%;
+	margin:1px;
+	position: relative;
+	animation-name: pulse;
+}
+
+/*
+Conteneur des icoles
+*/
+.cont-icon{
+	position: absolute;
+	width: 100%;
+	display:flex;
+	justify-content: space-evenly;
+	bottom: 2%;
+	color:white;
+	padding: 10px 0px 10px 0px;
+	background-color:rgba(0, 0, 0,0.8);
+	visibility: hidden;
+}
+
+.cont-galerie:hover .cont-icon{
+	visibility: visible;
+	box-shadow:inset -2px 0px 34px #faf7fa;
+	transition:all 0.5s ease;
+}
+
+.btn-like{
+	position: relative;
+}
+
+.ct-like{
+	position: absolute;
+	top:-15%;
+	right:-15%;
+	background-color:red;
+	height: 15px;
+	width: 15px;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100%;
+	font-size: 1.1em;
+}
+
+.fab, .fas, .far{
+	cursor: pointer;
+}
+
+.img-galerie{
+	width:100%;
+}
+/*********************************************************
+						FOOTER
+*********************************************************/
+
+
+
+}
