@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<!-- Stylesheets -->	
+	<link rel="stylesheet" href="../css/desktop.css">
+	<link rel="stylesheet" href="../css/smartphone.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+<!-- font family -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+	<header>
+		<div class="contain-social">
+
+<!-- Contain logo social -->
+			<div>
+				<i class="fab fa-instagram fa-1x"></i>
+				<i class="fab fa-pinterest fa-1x"></i>
+				<i class="fab fa-facebook-f fa-1x"></i>
+			</div>
+		</div>
+
+
+
+		<div class="header-content">
+			
+			<div class="contain-title">
+				<i class="fas fa-bars fa-2x"></i>
+				<div class="container-img">
+				<img src="../img/wildo_logo.jpg">
+					</div>
+
+					<% if (locals.info) {%>
+					<div style="color:white;">
+						<%= info %>
+					</div>
+				<%	} %>
+			</div>
+
+<!-- Menu de navigation -->
+
+			<nav class="nav-header">
+				<ul>
+					<li><a href="/accueil"><i class="fas fa-home"></i>ACCUEIL</a></li>
+					<li><a href="/galerie-photos"><i class="fas fa-camera"></i>PORTFOLIO</a></li>
+					<li><a href="#"><i class="fas fa-user"></i>A PROPOS</a></li>
+					<li><a href="/contact"><i class="fas fa-pencil-alt"></i>CONTACT</a></li>
+					<li><a href="/quiz"><i class="fas fa-question-circle"></i>QUIZ</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</header>

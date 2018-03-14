@@ -1,0 +1,55 @@
+
+<% include ../partials/header %>
+
+	<main class="contain-form">
+
+		<div>
+			
+		<h2 class="pos">Me contacter</h2>
+
+		<form action="/contact" method="post">
+			
+<!-- Champ prénom -->
+			<div>
+				<input type="text" name="firstname" id="" placeholder="prénom">
+				</div>
+			
+<!-- Champ nom -->
+			<div>
+				<input type="text" name="lastname" id="" placeholder="Nom">
+				</div>
+			
+<!-- Champ Email -->
+			<div>
+				<input type="text" name="mail" id="" placeholder="Email">
+			
+				</div>
+			
+<!-- Champ Numéro -->
+			<div>
+				<input type="phone" name="phone" id="" placeholder="Numéro">
+			
+				</div>	
+			
+
+					
+					
+
+
+				<div>
+					<p>Votre message :</p>
+					<textarea name="message" id="" cols="30" rows="10"></textarea>
+				</div>
+
+				<div>	
+				<input type="submit" value="Envoyer">
+					</div>
+				
+		</form>
+		
+			</div>
+
+	</main>
+
+
+<% include ../partials/footer %>	

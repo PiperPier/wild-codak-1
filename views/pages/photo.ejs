@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+
+<main>
+    <section  class="contain all-img">
+        
+    <%  for(result of result ) { %>
+        <div class="cont-galerie">
+             <img class="img-galerie" src="../img/PHOTOS_MONUMENTS/<%= result.name %>">
+        <div class="cont-icon">
+            <div class="btn-like">
+            <span class="ct-like">3</span>
+            <i class="far fa-heart fa-2x click" data-id="<% result.name %>"></i>
+            </div>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-pinterest-square fa-2x "></i>
+            <i class="fas fa-eye fa-2x"></i>
+            </div>
+        </div>
+    <% } %>
+       
+    </section>
+
+</main>
+
+<% include ../partials/footer %>
+

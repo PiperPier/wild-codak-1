@@ -1,0 +1,93 @@
+    <!-- Page Full Screen -->	
+	<div class="opening-page">
+            <!-- Sound photo -->
+            <audio class="sound" src="../sound/shoot.wav"></audio>
+            <div class="open1">
+                <img class="open-img1" src="../img/EIFFEL_LEFT2.png" alt="">
+                    </div>
+    
+    
+            <div class="open2">
+                <img class="open-img2" src="../img/EIFFEL_RIGHT2.png" alt="">
+                    </div>						
+            </div>
+    
+            
+            <div class="opening-btn">
+                <span class="open-btn">OPEN</span>
+                    </div>
+<% include ../partials/header %>
+
+<main>
+
+
+    <div class="contain-video">
+
+        <video src="../video/02_WILDO_H264.mp4"></video>
+        <div class="skip-video">SKIP INTRO</div>
+    </div>
+
+
+    <article class="contain-art">
+        
+    </article>
+
+
+    <!-- Liste des thémes -->
+
+<!--Debut MOBILE VERSION -->
+    <section class="mobile contain-img">
+
+        <!-- Photos des édifices culturels -->
+        <div class="img culturel">
+
+            <img src="..photos/tour_eiffel.jpg" alt="">
+            <p><a href="culture.html">CULTURE</a></p>
+        </div>
+
+
+        <!-- Photos des édifices de types musées -->
+        <div class="img museum">
+            <img src="../photos/louvre.jpg" alt="">
+            <p><a href="museum.html">MUSEES</a></p>
+        </div>
+
+        <!-- Photos des édifices de types religieux -->
+
+        <div class="img religious">
+            <img src="../photos/PHOTOS_MONUMENTS/NOTREDAME_04.jpg" alt="">
+            <p><a href="galerie/religious.html">RELIGIEUX</a></p>
+        </div>
+        </section>
+
+        <!--Fin MOBILE VERSION -->
+
+<!-- DESKTOP VERSION -->			
+    <section id="scroll_c" class="desktop culturel">
+        <div>
+            <h2>MONUMENTS HISTORIQUES</h2>
+            <p class="fixed" >Les monuments de Paris font partie des plus visités au monde : la ville Lumière ou celle des amoureux attire en effet des millions de visiteurs chaque année. La capitale française se laisse sans cesse découvrir et redécouvrir au fil des balades le long de la Seine ou des rues historiques. Faites plus ample connaissance avec la cité sur monumentsdeparis.com. Qu'ils soient connus voire incontournables comme la Tour Eiffel, l'arc de Triomphe, le Champs de Mars, le Sacré Coeur, Notre Dame, les Invalides ou le Panthéon ou plus confidentiels comme le café de Flore, Bercy Village ou la Tour Saint Jacques, nous vous proposons de découvrir de nombreux sites touristiques parisiens et d'obtenir simplement toutes les informations nécessaires pour planifier votre prochaine visite grâce à MonumentsdeParis.net. De plus, les édifices mis en lumière sur ce site sont pointés sur une carte afin de les distinguer facilement et de prévoir des excursions sans rien oublier.</p>
+        </div>
+        </section>
+
+    <section  class="museum desktop">
+        <h2>MONUMENTS CULTURELS</h2>
+            <div>
+                <img src="" alt="">
+            </div>
+        </section>
+
+    <section class="desktop religious">
+        <h2>MONUMENTS RELIGIEUX</h2>
+        <div>
+        <img class="plx" src="../img/nd.pn" alt="">
+            </div>
+
+        </section>
+    
+</main>
+
+
+
+<% include ../partials/footer %>
+
